@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <link rel="stylesheet" href="css/cell.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"></link>
+    <script src="page.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 class="text-center">Worker Control Base</h1>
+    <div ng-app="mainApp" class="container">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <h2> <a class="navbar-brand" href="#">Home</a></h2>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/addStudent">Add Student</a></li>
+                        <li><a href="#/showStudent">Show Student</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        <div ng-controller="studentController">
+            <div ng-view></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

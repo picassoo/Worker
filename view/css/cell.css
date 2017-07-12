@@ -1,0 +1,4 @@
+table { empty-cells: hide; }
+table tr td:last-child {
+    border: none;
+}

@@ -1,0 +1,23 @@
+<div class="container-fluid" >
+    <div class="row">
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon1">@</span>
+            <input type="text" class="form-control" placeholder="First Name" aria-describedby="sizing-addon2" ng-model="student.name">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon3">@</span>
+            <input type="text" class="form-control" placeholder="Second Name" aria-describedby="sizing-addon2" ng-model="student.surname">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2">@</span>
+            <input type="number" class="form-control" placeholder="Age" aria-describedby="sizing-addon2" ng-model="student.ages">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon4">@</span>
+            <input type="number" class="form-control" placeholder="Salary" aria-describedby="sizing-addon2" ng-model="student.salary">
+        </div>
+        <div>
+            <input type="button" value="Add Student" ng-click="addStudent()" class="btn btn-primary btn-block">
+        </div>
+    </div>
+</div>

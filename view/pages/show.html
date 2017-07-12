@@ -1,0 +1,15 @@
+<input ng-model="search" placeholder="Ad" type="text" class="form-control">
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="student in students | filter :search | orderBy:'ages'">
+        <td>{{student.name}}</td>
+        <td>{{student.surname}}</td>
+        <td>{{student.ages}}</td>
+        <td><button id="{{students.indexOf(student)}}" ng-click="updateIndex(students.indexOf(student))" ><a href="#/infoStudent">Info</a></button></td>
+    </tr>
+</table>
